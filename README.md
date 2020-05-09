@@ -70,10 +70,21 @@ update `.ssh/config`
 Host *
   AddKeysToAgent yes
   UseKeychain yes
+  ForwardAgent yes
 
 Host myssh
   HostName example.com
   User user
+```
+
+Create and RSA key:
+```bash
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+```
+
+Copy it to any hosts added to `~/.ssh/config`:
+```bash
+ssh-copy-id myssh
 ```
 
 ## Vim
