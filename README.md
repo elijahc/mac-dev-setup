@@ -112,7 +112,10 @@ eval "$(rbenv init -)"
 
 ## Python
 
-Install pyenv
+macOS, like Linux, ships with Python already installed. I like using `pyenv` to manage multiple versions of Python (ex: 2.7 and 3) should we need to.
+
+
+Install pyenv via Homebrew by running:
 ```bash
 brew install pyenv pyenv-virtualenv
 ```
